@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Khodam by Kasim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Cek Khodam Yang Ada Di Diri Kamu</h1>
+        <form id="khodamForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="jawaban" name="name" required>
+
+            <label for="birthdate">Tanggal Lahir:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <button type="submit">Cek Khodam</button>
+        </form>
+    </div>
+    <div id="loading">
+        <h3>SEDANG MEMERIKSA KHODAM KAMU</h3>
+        <div id="loaders"></div>
+        <h4>MOHON TUNGGU SEBENTAR</h4>
+    </div>
+    <div id="hasil">
+        <div id="result"></div>
+        <h4>SERUUU KANNN?, HEHEHE MAU COBA LAGI?</h4>
+        <button class="btn" onclick="reload()">KLIK INII</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
