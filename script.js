@@ -16,7 +16,7 @@ document.getElementById('khodamForm').addEventListener('submit', function (event
 
 function checkKhodam(jawaban, birthdate) {
     // Fungsi sederhana untuk mendapatkan khodam
-    const khodams = ['HARIMAU SAKI GIGI', 'SAPI BALI', 'NAGA KALIBER', 'AYAM KAMPUS', 'ANJING GILA', 'MANTRI ORO', 'KUPU KUPU MALAM', 'KUDA PATA KAKI', 'SO MATI DEPE KHODAM'];
+    const khodams = ['HARIMAU SAKI GIGI', 'SAPI BALI', 'NAGA KALIBER', 'AYAM KAMPUS', 'ANJING GILA', 'MANTRI ORO', 'KUPU KUPU MALAM', 'KUDA PATA KAKI', 'SO MATI DEPE KHODAM', 'KAMBING PATAH KAKI', 'SAPU LIDI', 'LELE LAWAR', 'SAPIDERMEN', 'KUDA LUMPING', 'ULAR ILANG MATA', 'ZOMBIE', 'OPA UMA', 'GAJAH SUMBING', 'LATI PUNGGA', 'ORANG GILA'];
     const index = (jawaban.length + new Date(birthdate).getDate()) % khodams.length;
     return khodams[index];
 }
